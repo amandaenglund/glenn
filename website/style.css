@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    background-color: rgb(185, 221, 255);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 0.8em;
+    padding-top: 20px;
+}
+
+input {
+    padding: 5px;
+}
+
+.knapp {
+    text-transform: uppercase;
+    color: red;
+
+}

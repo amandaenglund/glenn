@@ -1,0 +1,20 @@
+extends index.pug
+
+block content
+    h2 Vill du se hela Glenn-listan?
+    form(method='POST' action='/getform/visalista')
+        input(type='submit', name='data' class='knapp')
+    h2 Lägg till din favorit-Glenn i listan
+    form(method='POST' action='/getform/result')
+        input(type='text', placeholder='Nämn en Glenn', name='namn')
+        input(type='number', placeholder='Ett betyg', name='nummer')
+        input(type='submit', name='data' class='knapp')
+    h2 Ändra poäng på din Glenn
+    form(method='POST' action='/getform/changeGlenn')
+        input(type='text', placeholder='Nämn en Glenn', name='namn')
+        input(type='number', placeholder='Ett betyg', name='nummer')
+        input(type='submit', name='data' class='knapp')
+    h2 Ta bort en Glenn du inte gillar (svårt men det kan gå)
+    form(method='POST' action='/getform/deleteglenn')
+        input(type='text', placeholder='Ta bort en Glenn', name='namn')
+        input(type='submit', name='data' class='knapp')
